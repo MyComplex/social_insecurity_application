@@ -1,5 +1,5 @@
 /* IMPORT MODULES */
-const { Schema, model } = require('mongoose');
+const { Types, Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 /* CREATE REACTION SCHEMA */
@@ -28,7 +28,7 @@ const reactionSchema = new Schema({
         toJSON: {
             getters: true
         },
-        id: false
+        _id: false
     }
 );
 
