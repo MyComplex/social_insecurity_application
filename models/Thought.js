@@ -1,5 +1,6 @@
 /* IMPORT MODULES */
 const { Schema, model } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 /* CREATE THOUGHT SCHEMA */
 const thoughtSchema = new Schema({
